@@ -1,0 +1,1080 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Bakery</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<!--
+			CSS
+			============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<header id="header" id="home">
+			<div class="header-top">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
+							<div class="menu-social-icons">
+								<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+								<a href="http://plus.google.com/"><i class="fa fa-google-plus"></i>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
+							<a class="btns" href="tel:510-596-8802"> (510) 596-8802</a>
+							<a class="btns" href="mailto:sassynailsspa@gmail.com">sassynailsspa@gmail.com</a>
+							<span class="lnr lnr-phone-handset"></span>
+							</a>
+							<a class="icons" href="mailto:support@colorlib.com">
+								<span class="lnr lnr-envelope"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<a href="index.html"><img src="img/IMG_0498.jpg.PNG" title="Sassy Nails Spa" /></a>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li class="menu-active"><a href="index.html">Home</a></li>
+							<li><a href="menu.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav><!-- #nav-menu-container -->
+				</div>
+			</div>
+		</header><!-- #header -->
+		<div class="bottom">
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div>  
+		</div>
+		<script>
+				// When the user scrolls the page, execute myFunction 
+			window.onscroll = function() {myFunction()};
+			
+			function myFunction() {
+				var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				var scrolled = (winScroll / height) * 100;
+				document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
+		<!-- start banner Area -->
+		<section class="banner-area relative about-banner" id="home">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="about-content col-lg-12">
+						<h1 class="text-white">
+							Menu List
+						</h1>
+						<p class="text-white link-nav"><a href="index.html">Home </a> <span
+								class="lnr lnr-arrow-right"></span> <a href="menu.html"> Menu</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->
+
+		<!-- Start menu-list Area -->
+		<section class="menu-list-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="menu-cat mx-auto">
+						<ul class="nav nav-pills" id="pills-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-manicure-tab" data-toggle="pill"
+									href="#pills-manicure" role="tab" aria-controls="pills-manicure"
+									aria-selected="true">Manicure</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-pedicure-tab" data-toggle="pill" href="#pills-pedicure"
+									role="tab" aria-controls="pills-pedicure" aria-selected="false">Pedicure</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-waxing-tab" data-toggle="pill" href="#pills-waxing"
+									role="tab" aria-controls="pills-waxing" aria-selected="false">Waxing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-facials-tab" data-toggle="pill" href="#pills-facials"
+									role="tab" aria-controls="pills-facials" aria-sel ected="false">Facials </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="pills-tabContent" class="tab-content ">
+
+					<div class="tab-pane fade show active" id="pills-manicure" role="tabpanel"
+						aria-labelledby="manicure-tab">
+						<div class="single-menu-list row justify-content-between align-items-center">
+							<div class="col-lg-9">
+
+								<div class="popup" onclick="modalPic()" onmouseenter="man()" onmouseout="manOut()">
+									<h2>Basic Manicure</h2>
+									<img src="img/about-img.png" class="popuptext" id="manicure"></img>
+								</div>
+								<div class="modal" id="manModal">
+									<img class="modal-content" id="manModCont">
+									<div id="caption"></div>
+								</div>
+
+								<script>
+									// When the user clicks on div, open the popup
+									function man() {
+										var popup = document.getElementById("manicure");
+										popup.setAttribute("class", "popuptext show");
+									}
+
+									function manOut() {
+										var popup = document.getElementById("manicure");
+										popup.setAttribute("class", "popuptext none")
+
+									}
+
+									function modalPic() {
+										var modal = document.getElementById("manModal");
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("manicure");
+										var modalImg = document.getElementById("manModCont");
+										var captionText = document.getElementById("caption");
+										var header1 = document.getElementById("header");
+
+										modalImg.src = img.src;
+										captionText.innerHTML = img.alt;
+										modal.style.display = "block";
+										header1.style.display = "none";
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+										// When the user clicks on <span> (x), close the modal
+										modalImg.onclick = function () {
+											modal.style.display = "none";
+											header1.style.display = "block";
+										}
+									}
+								</script>
+
+								<p>
+									The basic manicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+									polish choice,
+									and a 10 minute massage.
+								</p>
+								<p>Time: 30 Minutes </p>
+							</div>
+							<div class="col-lg-3 flex-row d-flex price-size">
+								<div class="s-price col">
+									<h2>Starting $12</h2>
+								</div>
+							</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalPicP()" onmouseenter="manP()" onmouseout="manPOut()">
+										<h2> Paraffin Manicure</h2>
+										<img src="img/about-img.png" class="popuptext" id="manicureP"></img>
+									</div>
+									<div class="modal" id="manPModal">
+										<img class="modal-content" id="manPModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function manP() {
+											var popup = document.getElementById("manicureP");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function manPOut() {
+											var popup = document.getElementById("manicureP");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalPicP() {
+											var modal = document.getElementById("manPModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("manicureP");
+											var modalImg = document.getElementById("manPModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic manicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2>Starting $18 </h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+							<div class="col-lg-9">
+
+								<div class="popup" onclick="modalPicD()" onmouseenter="manD()" onmouseout="manDOut()">
+									<h2> Deluxe Manicure</h2>
+									<img src="img/about-img.png" class="popuptext" id="manicureD"></img>
+								</div>
+								<div class="modal" id="manDModal">
+									<img class="modal-content" id="manDModCont">
+									<div id="caption"></div>
+								</div>
+
+								<script>
+									// When the user clicks on div, open the popup
+									function manD() {
+										var popup = document.getElementById("manicureD");
+										popup.setAttribute("class", "popuptext show");
+									}
+
+									function manDOut() {
+										var popup = document.getElementById("manicureD");
+										popup.setAttribute("class", "popuptext none")
+									}
+
+									function modalPicD() {
+										var modal = document.getElementById("manDModal");
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("manicureD");
+										var modalImg = document.getElementById("manDModCont");
+										var captionText = document.getElementById("caption");
+										var header1 = document.getElementById("header");
+
+										modalImg.src = img.src;
+										captionText.innerHTML = img.alt;
+										modal.style.display = "block";
+										header1.style.display = "none";
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+										// When the user clicks on <span> (x), close the modal
+										modalImg.onclick = function () {
+											modal.style.display = "none";
+											header1.style.display = "block";
+										}
+									}
+								</script>
+
+								<p>
+									The basic manicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+									polish choice,
+									and a 10 minute massage.
+								</p>
+								<p>Time: 30 Minutes </p>
+							</div>
+							<div class="col-lg-3 flex-row d-flex price-size">
+								<div class="s-price col">
+									<h2>Starting $20 </h2>
+								</div>
+							</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+							<div class="col-lg-9">
+
+								<div class="popup" onclick="modalPicG()" onmouseenter="manG()" onmouseout="manGOut()">
+									<h2> Gel Manicure</h2>
+									<img src="img/about-img.png" class="popuptext" id="manicureG"></img>
+								</div>
+								<div class="modal" id="manGModal">
+									<img class="modal-content" id="manGModCont">
+									<div id="caption"></div>
+								</div>
+
+								<script>
+									// When the user clicks on div, open the popup
+									function manG() {
+										var popup = document.getElementById("manicureG");
+										popup.setAttribute("class", "popuptext show");
+									}
+
+									function manGOut() {
+										var popup = document.getElementById("manicureG");
+										popup.setAttribute("class", "popuptext none")
+									}
+
+									function modalPicG() {
+										var modal = document.getElementById("manGModal");
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("manicureG");
+										var modalImg = document.getElementById("manGModCont");
+										var captionText = document.getElementById("caption");
+										var header1 = document.getElementById("header");
+
+										modalImg.src = img.src;
+										captionText.innerHTML = img.alt;
+										modal.style.display = "block";
+										header1.style.display = "none";
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+										// When the user clicks on <span> (x), close the modal
+										modalImg.onclick = function () {
+											modal.style.display = "none";
+											header1.style.display = "block";
+										}
+									}
+								</script>
+
+								<p>
+									The basic manicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+									polish choice,
+									and a 10 minute massage.
+								</p>
+								<p>Time: 30 Minutes </p>
+							</div>
+							<div class="col-lg-3 flex-row d-flex price-size">
+								<div class="s-price col">
+									<h2>Starting $28 </h2>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="tab-pane fade" id="pills-pedicure" role="tabpanel" aria-labelledby="pills-pedicure-tab">
+						<div class="single-menu-list row justify-content-between align-items-center">
+							<div class="col-lg-9">
+
+								<div class="popup" onclick="modalPic1()" onmouseenter="ped()" onmouseout="pedOut()">
+									<h2>Basic Pedicure</h2>
+									<img src="img/SASSY NAILS/raw img/ombre-manicure-.jpg" class="popuptext" id="pedicure"></img>
+								</div>
+								<div class="modal" id="pedModal">
+									<img class="modal-content" id="pedModCont">
+									<div id="caption"></div>
+								</div>
+
+								<script>
+									// When the user clicks on div, open the popup
+									function ped() {
+										var popup = document.getElementById("pedicure");
+										popup.setAttribute("class", "popuptext show");
+									}
+
+									function pedOut() {
+										var popup = document.getElementById("pedicure");
+										popup.setAttribute("class", "popuptext none")
+									}
+
+									function modalPic1() {
+										var modal = document.getElementById("pedModal");
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("pedicure");
+										var modalImg = document.getElementById("pedModCont");
+										var captionText = document.getElementById("caption");
+										var header1 = document.getElementById("header");
+
+										modalImg.src = img.src;
+										captionText.innerHTML = img.alt;
+
+										modal.style.display = "block";
+										header1.style.display = "none";
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+										// When the user clicks on <span> (x), close the modal
+										modalImg.onclick = function () {
+											modal.style.display = "none";
+											header1.style.display = "block";
+										}
+									}
+								</script>
+
+								<p>
+									The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+									polish choice,
+									and a 10 minute massage.
+								</p>
+								<p>Time: 30 Minutes </p>
+							</div>
+							<div class="col-lg-3 flex-row d-flex price-size">
+								<div class="s-price col">
+									<h2> Starting $25</h2>
+								</div>
+							</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalPedH()" onmouseenter="pedH()" onmouseout="pedHOut()">
+										<h2>Hawaiian Pedicure</h2>
+										<img src="img/SASSY NAILS/raw img/ombre-manicure-.jpg" class="popuptext" id="pedicureH"></img>
+									</div>
+									<div class="modal" id="pedHModal">
+										<img class="modal-content" id="pedHModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function pedH() {
+											var popup = document.getElementById("pedicureH");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function pedHOut() {
+											var popup = document.getElementById("pedicureH");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalPedH() {
+											var modal = document.getElementById("pedHModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("pedicureH");
+											var modalImg = document.getElementById("pedHModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $32</h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalPedSD()" onmouseenter="pedSD()" onmouseout="pedSDOut()">
+										<h2>Sassy Deluxe Pedicure</h2>
+										<img src="img/SASSY NAILS/raw img/ombre-manicure-.jpg" class="popuptext" id="pedicureSD"></img>
+									</div>
+									<div class="modal" id="pedSDModal">
+										<img class="modal-content" id="pedSDModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function pedSD() {
+											var popup = document.getElementById("pedicureSD");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function pedSDOut() {
+											var popup = document.getElementById("pedicureSD");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalPedSD() {
+											var modal = document.getElementById("pedSDModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("pedicureSD");
+											var modalImg = document.getElementById("pedSDModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $35</h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalPicDP()" onmouseenter="pedD()" onmouseout="pedDOut()">
+										<h2>Signature Pedicure</h2>
+										<img src="img/about-img.png" class="popuptext" id="pedicureD"></img>
+									</div>
+									<div class="modal" id="pedDModal">
+										<img class="modal-content" id="pedDModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function pedD() {
+											var popup = document.getElementById("pedicureD");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function pedDOut() {
+											var popup = document.getElementById("pedicureD");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalPicDP() {
+											var modal = document.getElementById("pedDModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("pedicureD");
+											var modalImg = document.getElementById("pedDModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $37</h2>
+									</div>
+								</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="pills-waxing" role="tabpanel" aria-labelledby="pills-waxing-tab">
+						<div class="single-menu-list row justify-content-between align-items-center">
+							<div class="col-lg-9">
+
+								<div class="popup" onclick="modalWaxL()" onmouseenter="waxL()" onmouseout="waxLOut()">
+									<h2>Lip Waxing</h2>
+									<img src="img/about-img.png" class="popuptext" id="waxL"></img>
+								</div>
+								<div class="modal" id="waxLModal">
+									<img class="modal-content" id="waxLModCont">
+									<div id="caption"></div>
+								</div>
+
+								<script>
+									// When the user clicks on div, open the popup
+									function waxL() {
+										var popup = document.getElementById("waxL");
+										popup.setAttribute("class", "popuptext show");
+									}
+
+									function waxLOut() {
+										var popup = document.getElementById("waxL");
+										popup.setAttribute("class", "popuptext none")
+									}
+
+									function modalWaxL() {
+										var modal = document.getElementById("waxLModal");
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("waxL");
+										var modalImg = document.getElementById("waxLModCont");
+										var captionText = document.getElementById("caption");
+										var header1 = document.getElementById("header");
+
+										modalImg.src = img.src;
+										captionText.innerHTML = img.alt;
+
+										modal.style.display = "block";
+										header1.style.display = "none";
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+										// When the user clicks on <span> (x), close the modal
+										modalImg.onclick = function () {
+											modal.style.display = "none";
+											header1.style.display = "block";
+										}
+									}
+								</script>
+
+								<p>
+									The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+									polish choice,
+									and a 10 minute massage.
+								</p>
+								<p>Time: 30 Minutes </p>
+							</div>
+							<div class="col-lg-3 flex-row d-flex price-size">
+								<div class="s-price col">
+									<h2> Starting $7</h2>
+								</div>
+							</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalWaxC()" onmouseenter="waxC()" onmouseout="waxCOut()">
+										<h2>Chin Waxing</h2>
+										<img src="img/about-img.png" class="popuptext" id="waxC"></img>
+									</div>
+									<div class="modal" id="waxCModal">
+										<img class="modal-content" id="waxCModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function waxC() {
+											var popup = document.getElementById("waxC");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function waxCOut() {
+											var popup = document.getElementById("waxC");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalWaxC() {
+											var modal = document.getElementById("waxCModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("waxC");
+											var modalImg = document.getElementById("waxCModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $7</h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalWaxE()" onmouseenter="waxE()" onmouseout="waxEOut()">
+										<h2>Eyebrow Waxing</h2>
+										<img src="img/about-img.png" class="popuptext" id="waxE"></img>
+									</div>
+									<div class="modal" id="waxEModal">
+										<img class="modal-content" id="waxEModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function waxE() {
+											var popup = document.getElementById("waxE");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function waxEOut() {
+											var popup = document.getElementById("waxE");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalWaxE() {
+											var modal = document.getElementById("waxEModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("waxE");
+											var modalImg = document.getElementById("waxEModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $7</h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalWaxLe()" onmouseenter="waxLe()" onmouseout="waxLeOut()">
+										<h2>Leg Waxing</h2>
+										<img src="img/about-img.png" class="popuptext" id="waxLe"></img>
+									</div>
+									<div class="modal" id="waxLeModal">
+										<img class="modal-content" id="waxLeModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function waxLe() {
+											var popup = document.getElementById("waxLe");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function waxLeOut() {
+											var popup = document.getElementById("waxLe");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalWaxLe() {
+											var modal = document.getElementById("waxLeModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("waxLe");
+											var modalImg = document.getElementById("waxLeModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $7</h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalWaxBr()" onmouseenter="waxBr()" onmouseout="waxBrOut()">
+										<h2>Brazillian Waxing</h2>
+										<img src="img/about-img.png" class="popuptext" id="waxBr"></img>
+									</div>
+									<div class="modal" id="waxBrModal">
+										<img class="modal-content" id="waxBrModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function waxBr() {
+											var popup = document.getElementById("waxBr");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function waxBrOut() {
+											var popup = document.getElementById("waxBr");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalWaxBr() {
+											var modal = document.getElementById("waxBrModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("waxBr");
+											var modalImg = document.getElementById("waxBrModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $7</h2>
+									</div>
+								</div>
+						</div>
+						<div class="single-menu-list row justify-content-between align-items-center">
+								<div class="col-lg-9">
+	
+									<div class="popup" onclick="modalWaxBa()" onmouseenter="waxBa()" onmouseout="waxBaOut()">
+										<h2>Back Waxing</h2>
+										<img src="img/about-img.png" class="popuptext" id="waxBa"></img>
+									</div>
+									<div class="modal" id="waxBaModal">
+										<img class="modal-content" id="waxBaModCont">
+										<div id="caption"></div>
+									</div>
+	
+									<script>
+										// When the user clicks on div, open the popup
+										function waxBa() {
+											var popup = document.getElementById("waxBa");
+											popup.setAttribute("class", "popuptext show");
+										}
+	
+										function waxBaOut() {
+											var popup = document.getElementById("waxBa");
+											popup.setAttribute("class", "popuptext none")
+										}
+	
+										function modalWaxBa() {
+											var modal = document.getElementById("waxBaModal");
+											// Get the image and insert it inside the modal - use its "alt" text as a caption
+											var img = document.getElementById("waxBa");
+											var modalImg = document.getElementById("waxBaModCont");
+											var captionText = document.getElementById("caption");
+											var header1 = document.getElementById("header");
+	
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+	
+											modal.style.display = "block";
+											header1.style.display = "none";
+	
+											// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+											modalImg.onclick = function () {
+												modal.style.display = "none";
+												header1.style.display = "block";
+											}
+										}
+									</script>
+	
+									<p>
+										The basic pedicure service includes a nail trim, nail buffer, cuticle cleaning, a nail
+										polish choice,
+										and a 10 minute massage.
+									</p>
+									<p>Time: 30 Minutes </p>
+								</div>
+								<div class="col-lg-3 flex-row d-flex price-size">
+									<div class="s-price col">
+										<h2> Starting $7</h2>
+									</div>
+								</div>
+						</div>
+						
+					</div>
+
+					<div class="tab-pane fade" id="pills-facials" role="tabpanel" aria-labelledby="pills-facials-tab">
+					</div>
+				</div>
+		</section>
+		<!-- End menu-list Area -->
+
+		<!-- Start about-video Area -->
+		<section class="about-video-area section-gap">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 about-video-left">
+						<h6 class="text-uppercase">Brand new app to blow your mind</h6>
+						<h1>
+							We’ve made a life <br>
+							that will change you
+						</h1>
+						<p>
+							<span>We are here to listen from you deliver exellence</span>
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmo d tempor incididunt ut
+							labore et
+							dolore magna aliqua.
+						</p>
+						<a class="primary-btn" href="https://www.youtube.com/watch?v=Ptr8viJoXME">Get Started Now</a>
+					</div>
+					<div class="col-lg-6 about-video-right justify-content-center align-items-center d-flex">
+						<a class="play-btn" href="img/Hit And Run Exported Video.mp4">
+							<img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End about-video Area -->
+
+		<!-- start footer Area -->
+		<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Us</h6>
+								<p>
+									We provide quality service along with exceptional care to customers.
+									<br> We value a relationships and a strong attention to detail in order to provide
+									customers with the
+									best service in Oakland.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Follow Us</h6>
+								<p>Feel free to follow us on social media</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+									<a href="http://plus.google.com/"><i class="fa fa-google-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		<!-- End footer Area -->
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+		<script src="js/easing.min.js"></script>
+		<script src="js/hoverIntent.js"></script>
+		<script src="js/superfish.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/mail-script.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+
+	</html>
